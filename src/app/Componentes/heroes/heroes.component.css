@@ -1,0 +1,42 @@
+.ocultar{
+    visibility: hidden;
+}
+.mostrar{
+    visibility: visible;
+}
+.titulo{
+    color: azure;
+    text-align: center;
+
+}
+#tit1{
+    color: azure;
+    
+}
+#tit2{
+    color: azure;
+    text-align: center;
+
+}
+.subtit{
+    color: rgb(170, 179, 179);
+
+}
+.text{
+    color: rgb(163, 202, 202);
+    text-align: center;
+
+}
+#lista{
+    color: rgb(30, 68, 68);
+
+
+}
+#back{
+   background-color: rgb(95, 116, 160);
+}
+.btn1{
+    background-color: rgb(253, 185, 83);
+    color: azure;
+
+}

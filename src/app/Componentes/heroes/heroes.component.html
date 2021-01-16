@@ -1,0 +1,46 @@
+<h1 class="titulo">El mundo de los Héroes</h1>
+<br>
+<br>
+
+<fieldset id="lista">
+  <legend id="tit2" style="width:9cm ;">Actuador</legend>
+<h4>{{hero.name | uppercase}}</h4>
+<div>
+    <label>Inserte el héroe:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+  </div>
+<br>
+
+<div><span>ID: </span>{{hero.id}}</div>
+<div><span>Nombre: </span>{{hero.name}}</div>
+  <br>
+</fieldset>
+  <br>
+  <br>
+  <h2 class="titulo">Lista completa:</h2><p id="tit2">(Da click para activar)</p>
+<ul id="lista" class="heroes">
+    <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+<br>
+<aside>
+<fieldset style="width: 6cm;height:5cm;" id="back" class="{{value}}">
+
+<legend id="tit1">DATOS</legend>
+<h2 id="tit2">HÉROE {{selectedHero.name | uppercase}}</h2>
+<div class="text"><span>ID: </span>{{selectedHero.id}}</div>
+<div class="text">
+  <label>Nombre:
+    <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+  </label>
+ 
+</div>
+
+</fieldset>
+<br>
+<button class="btn1" (click)="eventoButton()">{{valueB}}</button>
+<br>
+</aside>
+
